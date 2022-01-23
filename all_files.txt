@@ -7,8 +7,6 @@
 6417536	vendor/modem_firmware/pigeon/cp.img
 5907324	system/bin/dji_perception
 4816500	system/etc/dji_navigation/motion_primitive_traj
-4194304	vendor/[SYS]/Journal
-4194304	system/[SYS]/Journal
 3859452	system/bin/dji_rcam
 3314384	system/lib/libmod_imx283_wm232_tp1901_2d8.so
 3314384	system/lib/libmod_imx283_wm232_tp1901_2d4.so
