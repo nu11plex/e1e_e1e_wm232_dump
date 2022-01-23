@@ -1,0 +1,82 @@
+{
+    "peer_attr" : [
+        { "dev_type" : "0x12", "dev_num" : "0x00" },
+        { "dev_type" : "0x12", "dev_num" : "0x04" }
+    ],
+    "registered_state" : [
+        { "scope" : "perception", "states" : ["high_power", "lowe_power"] },
+        { "scope" : "test", "states" : ["high_power_test", "lowe_power_test"] }
+    ],
+    "perception" : [
+        {
+            "high_power" :
+            {
+                "resume" :[
+                    "all"
+                ],
+                "suspend" :[
+                    "null"
+                ]
+            }
+        },
+        {
+            "lowe_power" :
+            {
+                "resume" :[
+                    "null"
+                ],
+                "suspend" :[
+                    "all"
+                ]
+            }
+        }
+    ],
+    "test" : [
+        {
+            "high_power_test" :
+            {
+                "resume" :[
+                    "module_test", "module_test1"
+                ],
+                "suspend" :[
+                    "module_test2"
+                ]
+            }
+        },
+        {
+            "lowe_power_test" :
+            {
+                "resume" :[
+                    "null"
+                ],
+                "suspend" :[
+                    "module_test", "module_test1", "module_test2"
+                ]
+            }
+        }
+    ],
+    "drone" : [
+        {
+            "factory_mode" :
+            {
+                "resume" :[
+                    "tof"
+                ],
+                "suspend" :[
+                    "vio", "oa"
+                ]
+            }
+        },
+        {
+            "fly_mode" :
+            {
+                "resume" :[
+                    "tof", "vio", "oa"
+                ],
+                "suspend" :[
+                    "null"
+                ]
+            }
+        }
+    ]
+}

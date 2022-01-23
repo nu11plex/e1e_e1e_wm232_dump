@@ -1,0 +1,25 @@
+{
+    "DEF_VPS_TOF_PARAM": {
+        "kalman_filter_config": {
+            "amplitude_threshold": "40.0",
+            "amplitude_threshold_near": "10000.0",
+            "distance_valid_lower_limit": "0.0",
+            "distance_in_range_lower_limit": "0.15",
+            "distance_in_range_upper_limit": "10.0",
+            "acc_z_lower_limit": "-19.9",
+            "acc_z_upper_limit": "19.9",
+            "covariance_default": "0.01",
+            "covariance_highest": "1000.0",
+            "delta_T": "0.05",
+            "relative_error": "0.01",
+            "data_in_range_tolerance": "5",
+            "data_out_range_tolerance": "3",
+            "Q1": "0.05",
+            "Q2": "0.1",
+            "Q3": "0.0",
+            "R1": "1.0",
+            "R2": "0.1",
+            "deviation_tolerance": "100.0"
+        }
+    }
+}

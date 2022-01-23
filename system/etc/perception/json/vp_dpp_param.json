@@ -1,0 +1,150 @@
+{
+    "dpp_basic_cfgs": [
+        {
+            "dpp_dir": "DPP_DIRECTION_DOWN",
+            "sgbm_dir": 0,
+            "thread_name": "dpp_down",
+            "rectify_to_disp_rotation_e": "DPP_NO_ROTATE",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disparity": 64,
+            "dpp_config_param":
+            {
+                "sgbm_swi": 1,
+                "speckle_filter_swi": 1,
+                "sky_mask_swi": 0
+            },
+            "combined_disp_topic_name": "combined_disp_map_down",
+            "cnn_map_topic_name": "vp_cnn_down_parsing_map",
+            "dpp_disp_map_output_topic_name": "dpp_output_disp_map_down",
+            "dpp_cnn_sgbm_idx_offset_topic_name": "dpp_cnn_sgbm_idx_offset_down"
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_FRONT",
+            "sgbm_dir": 1,
+            "thread_name": "dpp_front",
+            "rectify_to_disp_rotation_e": "DPP_NO_ROTATE",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disparity": 64,
+            "dpp_config_param":
+            {
+                "sgbm_swi": 1,
+                "speckle_filter_swi": 1,
+                "sky_mask_swi": 1
+            },
+            "combined_disp_topic_name": "combined_disp_map_front",
+            "cnn_map_topic_name": "vp_cnn_front_parsing_map",
+            "dpp_disp_map_output_topic_name": "dpp_output_disp_map_front",
+            "dpp_cnn_sgbm_idx_offset_topic_name": "dpp_cnn_sgbm_idx_offset_front"
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_BACK",
+            "sgbm_dir": 2,
+            "thread_name": "dpp_back",
+            "rectify_to_disp_rotation_e": "DPP_ROTATE_ANTICLOCKWISE_90",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disparity": 64,
+            "dpp_config_param":
+            {
+                "sgbm_swi": 1,
+                "speckle_filter_swi": 1,
+                "sky_mask_swi": 1
+            },
+            "combined_disp_topic_name": "combined_disp_map_back",
+            "cnn_map_topic_name": "vp_cnn_back_parsing_map",
+            "dpp_disp_map_output_topic_name": "dpp_output_disp_map_up_back",
+            "dpp_cnn_sgbm_idx_offset_topic_name": "dpp_cnn_sgbm_idx_offset_back"
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_UP",
+            "sgbm_dir": 3,
+            "thread_name": "dpp_up",
+            "rectify_to_disp_rotation_e": "DPP_ROTATE_CLOCKWISE_90",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disparity": 64,
+            "dpp_config_param":
+            {
+                "sgbm_swi": 1,
+                "speckle_filter_swi": 1,
+                "sky_mask_swi": 1
+            },
+            "combined_disp_topic_name": "combined_disp_map_up",
+            "cnn_map_topic_name": "vp_cnn_up_parsing_map",
+            "dpp_disp_map_output_topic_name": "dpp_output_disp_map_up_up",
+            "dpp_cnn_sgbm_idx_offset_topic_name": "dpp_cnn_sgbm_idx_offset_up"
+        }
+    ],
+    "speckle_filter_cfgs": [
+        {
+            "dpp_dir": "DPP_DIRECTION_DOWN",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 1000
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_DOWN",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 250
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_FRONT",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 0.75,
+            "max_speckle_size": 2000
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_FRONT",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 500
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_BACK",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 0.75,
+            "max_speckle_size": 2000
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_BACK",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 500
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_RIGHT",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 0.75,
+            "max_speckle_size": 2000
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_RIGHT",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 500
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_LEFT",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 0.75,
+            "max_speckle_size": 2000
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_LEFT",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 500
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_UP",
+            "specke_filter_mode": "SPECKLE_MODE_NORMAL",
+            "max_disp_threshold": 0.75,
+            "max_speckle_size": 1600
+        },
+        {
+            "dpp_dir": "DPP_DIRECTION_UP",
+            "specke_filter_mode": "SPECKLE_MODE_HAND_CTRL",
+            "max_disp_threshold": 2,
+            "max_speckle_size": 500
+        }
+    ]
+}

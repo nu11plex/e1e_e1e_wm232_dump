@@ -1,0 +1,529 @@
+{
+    "DEF_CIS_LOAD_PARAM": {
+        "board_info": "11",
+        "visp_chn_num": "8",
+        "aec_param": [
+            {
+                "is_aec_master": "1",
+                "weight_matrix_type": "4",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "1",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "1",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "0",
+                "weight_matrix_type": "4",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "1",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "1",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "1",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "0",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "1",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "0",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.01",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "1",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.02",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            },
+            {
+                "is_aec_master": "0",
+                "weight_matrix_type": "8",
+                "aec_algo_type": "0",
+                "expo_conv_algo_type": "0",
+                "aec_interval_frames": "0.5",
+                "target_lum": "85",
+                "is_dynamic_target_lum_enable": "0",
+                "min_exposure_time_ms": "0.02",
+                "max_exposure_time_ms": "15",
+                "max_exposure_gain": "10",
+                "p0_gain": "1.0",
+                "p1_time_ms": "5.0",
+                "p1_gain": "2.0",
+                "p2_time_ms": "8.0",
+                "p3_gain": "6.0",
+                "p4_time_ms": "15.0",
+                "p5_gain": "10.0"
+            }
+        ],
+        "aedc_param": [
+            {
+                "is_aedc_enable": "1",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "0",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "1",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "0",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "1",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "0",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "1",
+                "aedc_algo_type": "0"
+            },
+            {
+                "is_aedc_enable": "0",
+                "aedc_algo_type": "0"
+            }
+        ],
+        "hdr_param": [
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            },
+            {
+                "is_hdr_enable": "0"
+            }
+        ],
+        "sky_mask_param": [
+            {
+                "is_sky_mask_enable": "0",
+                "mask_region": "0.15",
+                "test_param_x": "0",
+                "test_param_y": "1"
+            },
+            {
+                "is_sky_mask_enable": "0",
+                "mask_region": "0.15",
+                "test_param_x": "0",
+                "test_param_y": "1"
+            },
+            {
+                "is_sky_mask_enable": "1",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "2"
+            },
+            {
+                "is_sky_mask_enable": "1",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "2"
+            },
+            {
+                "is_sky_mask_enable": "1",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "2"
+            },
+            {
+                "is_sky_mask_enable": "1",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "2"
+            },
+            {
+                "is_sky_mask_enable": "0",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "4"
+            },
+            {
+                "is_sky_mask_enable": "0",
+                "mask_region": "0.15",
+                "test_param_x": "1",
+                "test_param_y": "4"
+            }
+        ],
+        "flashlight_param": [
+            {
+                "is_flashlight_switch": "1",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "84"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "80",
+                        "down_temp_level": "87"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "83",
+                        "down_temp_level": "90"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "86",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            },
+            {
+                "is_flashlight_switch": "0",
+                "led_lum_ddarkness_threshold": "0.90",
+                "led_lum_dbrightness_threshold": "0.4",
+                "led_lum_dambient_threshold": "0.6",
+                "power": "100",
+                "save_flag": "0",
+                "automatic_adjustment_flag": "0",
+                "range_level": "4",
+                "power_range": [
+                    {
+                        "power_level": "100",
+                        "up_temp_level": "120",
+                        "down_temp_level": "91"
+                    },
+                    {
+                        "power_level": "85",
+                        "up_temp_level": "87",
+                        "down_temp_level": "92"
+                    },
+                    {
+                        "power_level": "70",
+                        "up_temp_level": "88",
+                        "down_temp_level": "60"
+                    },
+                    {
+                        "power_level": "50",
+                        "up_temp_level": "81.5",
+                        "down_temp_level": "80"
+                    }
+                ]
+            }
+        ],
+        "dump_visp_pipeline_ts_statistic": "0"
+    }
+}

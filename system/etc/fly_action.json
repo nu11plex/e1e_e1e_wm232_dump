@@ -1,0 +1,209 @@
+{
+  "ActionList": {
+    "Takeoff": {
+      "type": "TAKEOFF",
+      "config": {
+        "hori_ctrl_with_vo": true,
+        "use_marker": true,
+        "base_point": [1.0, 0.75, -2.2],
+        "hori_ctrl_vel_bound": [0.05, 0.8],
+        "vert_ctrl_vel_bound": [0.1, 1.0],
+        "hori_ctrl_pid": [0.8, 0.3],
+        "vert_ctrl_pid": [1.0, 0.1]
+      }
+    },
+    "Hover1": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 17
+      }
+    },
+    "Flyroute1": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+		"vert_only": false,
+        "start_pos": [0, 0, 0],
+        "end_pos": [4.5, 0.75, -1.8],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 120,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Flyroute2": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+		"vert_only": false,
+        "start_pos": [0, 0, 0],
+        "end_pos": [1.5, 0.75, -1.6],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 240,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Flyroute3": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+		"vert_only": false,
+        "start_pos": [0, 0, 0],
+        "end_pos": [3.5, 0.75, -1.6],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 360,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Hover2": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 2
+      }
+    },
+    "Turnyaw1": {
+      "type": "TURNYAW",
+      "config": {
+        "use_marker": false,
+        "target_yaw_angle": 1080,
+        "turn_yaw_rate": 150,
+        "ctrl_pid": 1.5
+      }
+    },
+    "Hover3": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 1
+      }
+    },
+    "Flyroute4": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+		"vert_only": false,
+        "start_pos": [0, 0, 0],
+        "end_pos": [5.5, 0.75, -1.6],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Hover4": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 1.5
+      }
+    },
+    "Flyroute5": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": true,
+		"vert_only": true,
+        "start_pos": [0, 0, 0],
+        "end_pos": [5.5, 0.75, -0.75],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Hover5": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 7
+      }
+    },
+    "Hover6": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 2.5
+      }
+    },
+    "Flyroute6": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": true,
+		"vert_only": true,
+        "start_pos": [0, 0, 0],
+        "end_pos": [5.5, 0.75, -1.65],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Hover7": {
+      "type": "HOVER",
+      "config": {
+        "timeout": 4
+      }
+    },
+    "Flyroute7": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+		"vert_only": false,
+        "start_pos": [0, 0, 0],
+        "end_pos": [5.5, 1.6, -1.65],
+        "target_vel": 1,
+        "start_yaw": 0,
+        "end_yaw": 90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Land": {
+      "type": "LAND",
+      "config": {
+        "use_marker": false,
+        "stable_ctrl": true,
+		"vert_only": true,
+        "end_pos": [5.5, 0.75, 0],
+        "target_vel": 1.5,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    }
+  }
+}

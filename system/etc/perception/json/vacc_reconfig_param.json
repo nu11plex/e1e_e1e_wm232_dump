@@ -1,0 +1,260 @@
+{
+    "DEF_VACC_RECONFIG_PARAM": {
+        "sgbm_reconfig_enable": "0",
+        "vmux_isp_reconfig_enable": "0",
+        "sgbm_reconfig_param": {
+            "sgbm_use_mode_id": "0",
+            "sgbm_env_status_id": "0"
+        },
+        "vmux_isp_reconfig_param": {
+            "disable_rectify": "0",
+            "expo_freq": "20",
+            "vmux_chn_num": "6",
+            "vmux_user_config": [
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "4"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "5"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "3"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "2"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "7"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "pixel_bits": "8",
+                    "mipi_id": "6"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "pixel_bits": "0",
+                    "mipi_id": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "pixel_bits": "0",
+                    "mipi_id": "0"
+                }
+            ],
+            "visp_chn_num": "6",
+            "visp_user_config": [
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "640",
+                    "height": "480",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                },
+                {
+                    "width": "0",
+                    "height": "0",
+                    "downsample_enable": "0",
+                    "pixel_map_enable": "0"
+                }
+            ]
+        }
+    }
+}

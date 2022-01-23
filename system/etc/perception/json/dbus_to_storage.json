@@ -1,0 +1,35 @@
+{
+    "dbus2storage": {
+        "curve": [
+            {
+                "topic": "cpu_profile_test",
+                "file": "cpu_profile_test.bin",
+                "struct": "linux_cpu_log_t"
+            },
+            {
+                "topic": "cpu_profile_process_test",
+                "file": "cpu_profile_process_test.bin",
+                "struct": "linux_cpu_process_log_t"
+            },
+            {
+                "topic": "cpu_profile_thread_test",
+                "file": "cpu_profile_thread_test.bin",
+                "struct": ""
+            }
+        ],
+        "image": [
+            {
+                "topic": "raw/bottom/left0",
+                "file": "img_p3_file",
+                "struct": "ss_acc_desc_t"
+            }
+        ],
+        "text": [
+            {
+                "topic": "vp_test_log",
+                "file": "vp_test.log",
+                "struct": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,326 @@
+{
+    "v1_protocol": {
+        "COMMON": {
+            "cmdset": "0x00",
+            "subscription": [
+                {"cmdid": "0x00", "description": "heartbeat"},
+                {"cmdid": "0x01", "description": "version"},
+                {"cmdid": "0x02", "description": "v1trigger"},
+                {"cmdid": "0x70", "description": "dsh receive"},
+                {"cmdid": "0x71", "description": "dsh release"}
+            ]
+        },
+        "SPECIAL": {
+            "cmdset": "0x01",
+            "subscription": []
+        },
+        "CAMERA": {
+            "cmdset": "0x02",
+            "subscription": []
+        },
+        "FC": {
+            "cmdset": "0x03",
+            "subscription": [
+                {"cmdid": "0xc1", "description": "ds update"},
+                {"cmdid": "0x5a", "description": "fc motor"},
+                {"cmdid": "0x5b", "description": "fc state"},
+                {"cmdid": "0x6a", "description": "fc sensor"},
+                {"cmdid": "0xab", "description": "fc barometer"}
+            ]
+        },
+        "GIMBAL": {
+            "cmdset": "0x04",
+            "subscription": [
+                {"cmdid": "0x05", "description": "gimbal info"},
+                {"cmdid": "0x08", "description": "vision cali"},
+                {"cmdid": "0x30", "description": "push cali"},
+				{"cmdid": "0x3f", "description": "get vib data"}
+            ]
+        },
+        "CENTER": {
+            "cmdset": "0x05",
+            "subscription": []
+        },
+        "RC": {
+            "cmdset": "0x06",
+            "subscription": [
+                {"cmdid": "0x06", "description": "stick info"},
+                {"cmdid": "0x50", "description": "button info"}
+            ]
+        },
+        "WIFI": {
+            "cmdset": "0x07",
+            "subscription": []
+        },
+        "DM386": {
+            "cmdset": "0x08",
+            "subscription": []
+        },
+        "HDVT": {
+            "cmdset": "0x09",
+            "subscription": []
+        },
+        "VISION": {
+            "cmdset": "0x0a",
+            "subscription": [
+                {"cmdid": "0x09", "description": "visoin debug"},
+                {"cmdid": "0x5d", "description": "hdvt state"},
+                {"cmdid": "0x70", "description": "vio self cali"},
+                {"cmdid": "0x73", "description": "get oa result"},
+                {"cmdid": "0xd0", "description": "binocular cali image"},
+                {"cmdid": "0x41", "description": "autoflight request"}
+            ]
+        },
+        "SIM": {
+            "cmdset": "0x0b",
+            "subscription": []
+        },
+        "ESC": {
+            "cmdset": "0x0c",
+            "subscription": []
+        },
+        "SMART_BATTERY": {
+            "cmdset": "0x0d",
+            "subscription": []
+        },
+        "HDVT_1765_GND": {
+            "cmdset": "0x0e",
+            "subscription":[]
+        },
+        "S_TO_P_AIR": {
+            "cmdset": "0x0f",
+            "subscription":[]
+        },
+        "S_TO_P_GND": {
+            "cmdset": "0x10",
+            "subscription": [
+                {"cmdid": "0x0a", "description": "ctrl state"},
+                {"cmdid": "0x0b", "description": "fetch list"}
+            ]
+        },
+        "ADSB": {
+            "cmdset": "0x11",
+            "subscription": []
+        },
+        "BVISION": {
+            "cmdset": "0x12",
+            "subscription": []
+        },
+        "FPGA_AIR": {
+            "cmdset": "0x13",
+            "subscription": []
+        },
+        "FPGA_GND": {
+            "cmdset": "0x14",
+            "subscription": []
+        },
+        "GLASS": {
+            "cmdset": "0x15",
+            "subscription": []
+        },
+        "MAVLINK": {
+            "cmdset": "0x16",
+            "subscription": []
+        },
+        "WATCH": {
+            "cmdset": "0x17",
+            "subscription": []
+        },
+        "MAX": {
+            "cmdset": "0x18",
+            "subscription": []
+        }
+    },
+    "file_dump": {
+        "syslog": {"cbuf_size": 32, "max_size": 1024,  "max_index": 1},
+        "usrlog": {"cbuf_size": 64, "max_size": 51200, "max_index": 1},
+        "vio_test_data.txt": {"cbuf_size": 64, "max_size": 1024, "max_index": 1},
+        "marker_output.txt": {"cbuf_size": 64, "max_size": 1024, "max_index": 1},
+        "boom_up_marker.txt": {"cbuf_size": 64, "max_size": 1024, "max_index": 1},
+        "at_ctrl_data.txt": {"cbuf_size": 64, "max_size": 1024, "max_index": 1},
+        "at_action_mode.txt": {"cbuf_size": 64, "max_size": 1024, "max_index": 1},
+        "autotest_result.txt": {"cbuf_size": 32, "max_size": 1024, "max_index": 1},
+        "exception.txt": {"cbuf_size": 32, "max_size": 1024, "max_index": 1},
+        "video_path.txt": {"cbuf_size": 32, "max_size": 1024, "max_index": 1}
+    },
+    "user_task": {
+        "demo_thread": {
+            "disable":      1,
+            "library":      "at_demo.so",
+            "function":     "demo_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "autostart", "qrcode": ""},
+            "sema":         1,
+            "msgq":         {"msg_size": 64, "msgq_len": 16}
+        },
+        "system_timer": {
+            "library":      "at_systimer.so",
+            "function":     "systimer_entry",
+            "osal":         {"type": "timer", "timeout": 10, "repeat": 0},
+            "trigger":      {"mode": "autostart"}
+        },
+        "qrcode_thread": {
+            "library":      "at_qrcode.so",
+            "function":     "qrcode_entry",
+            "osal":         {"type":"thread", "affinity": "0x0"},
+            "trigger":      {"mode": "autostart"},
+            "msgq":         {"msg_size": 1, "msgq_len": 16},
+            "sema":         1
+        },
+        "led_thread": {
+            "library":      "at_led.so",
+            "function":     "led_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "autostart"},
+            "msgq":         {"msg_size": 64, "msgq_len": 16}
+        },
+        "marker_thread": {
+            "library":      "at_marker.so",
+            "function":     "marker_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-marker"},
+            "msgq":         {"msg_size": 256, "msgq_len": 10}
+        },
+        "v1trig_thread": {
+            "library":      "at_v1trigger.so",
+            "function":     "v1trigger_entry",
+            "osal":         {"type":"thread", "affinity": "0x0"},
+            "trigger":      {"mode": "autostart"}
+        },
+        "brightness_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "brightness_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-brightness"}
+        },
+        "dirtylens_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "dirtylens_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-dirtylens"}
+        },
+        "mtf_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "mtf_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-mtf"}
+        },
+        "lsc_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "lsc_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-lsc"}
+        },
+        "flashlight_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "flashlight_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-flashlight"}
+        },
+        "tof_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "tof_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-tof"}
+        },
+        "maincamcali_thread": {
+            "library":      "at_maincamcali.so",
+            "function":     "maincamcali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-maincamcali"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+        "monocamcali_thread": {
+            "library":      "at_monocamcali.so",
+            "function":     "monocamcali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-monocamcali"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+        "binocularcali_thread": {
+            "library":      "at_binocularcali.so",
+            "function":     "binocularcali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-binocularcali"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+        "gimbalcali_thread": {
+            "library":      "at_gimbalcali.so",
+            "function":     "gimbalcali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode","qrcode": "wm231-gimbalcaliatti"}
+        },
+        "dist6m_thread": {
+            "library":      "at_dist6m.so",
+            "function":     "dist6m_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode","qrcode": "wm231-dist6m"}
+        },
+        "imucali_thread": {
+            "library":      "at_imucali.so",
+            "function":     "imucali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode","qrcode": "wm231-imucali"}
+        },
+        "imubias_thread": {
+            "library":      "at_imubias.so",
+            "function":     "imubias_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode","qrcode": "wm231-imubias"}
+        },
+        "barotest_thread": {
+            "library":      "at_barotest.so",
+            "function":     "barometer_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode","qrcode": "wm231-barotest"}
+        },
+        "flytest_thread": {
+            "library":      "at_v1trigger.so",
+            "function":     "autoflight_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "autotest-indoor-flytest"},
+            "msgq":         {"msg_size": 256, "msgq_len": 10}
+        },
+        "stopfly_thread": {
+            "library":      "at_v1trigger.so",
+            "function":     "autoflightstop_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-stopfly"},
+            "msgq":         {"msg_size": 256, "msgq_len": 10}
+        },
+        "cleardata_thread": {
+            "library":      "at_cleardata.so",
+            "function":     "cleardata_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-cleardata"},
+            "msgq":         {"msg_size": 256, "msgq_len": 10}
+        },
+        "gimbalbasecali_thread": {
+            "library":      "at_gimbal_base_cali.so",
+            "function":     "gimbalcali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-gimbalbasecali"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+		"checkcb_thread": {
+            "library":      "at_checkcb.so",
+            "function":     "CheckCB_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-checkcb"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+	"fnccali_thread": {
+            "library":      "at_vision_sensor_test.so",
+            "function":     "FPNCali_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-fpncali"},
+            "msgq":         {"msg_size": 64, "msgq_len": 10}
+        },
+	"compasscali_thread": {
+            "library":      "at_compass.so",
+            "function":     "compass_entry",
+            "osal":         {"type": "thread", "affinity": "0x0"},
+            "trigger":      {"mode": "qrcode", "qrcode": "wm231-compasscali"}
+        }
+    }
+}

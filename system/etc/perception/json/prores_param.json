@@ -1,0 +1,99 @@
+{
+    "DEF_PRORES_PARAM": {
+        "enable": "1",
+        "motor_state_mask": "4",
+        "num_channels": "10",
+        "channel_params": [
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "120",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "480",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            },
+            {
+                "width": "640",
+                "height": "480",
+                "division_factor": "4",
+                "buffer_depth": "4",
+                "compress_ratio": "12.0f",
+                "enable": "1",
+                "motor_state_mask": "4"
+            }
+        ]
+    }
+}

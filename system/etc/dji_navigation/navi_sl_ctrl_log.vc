@@ -1,0 +1,15 @@
+bFILE navi_sl_ctrl.bin 1860 navi_sl_ctrl
+int16   head
+uint64  time_stamp
+int32   line_1
+int32   cur_img_index
+float   track_reliability
+int32   track_lost_cnt
+float   avg_err_x
+float   avg_err_y
+float   yaw_i
+float   pit_i
+float   yaw_vel
+float   pit_vel
+float   frame_time
+float   total_time
