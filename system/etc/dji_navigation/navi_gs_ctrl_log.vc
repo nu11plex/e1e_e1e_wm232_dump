@@ -1,0 +1,9 @@
+bFILE navi_gs_ctrl.bin 1860 navi_qs_ctrl
+int16   head
+uint64  time_stamp
+int32   line_1
+int32   cur_img_index
+float   avg_err_x
+float   avg_err_y
+float   yaw_vel
+float   pit_vel

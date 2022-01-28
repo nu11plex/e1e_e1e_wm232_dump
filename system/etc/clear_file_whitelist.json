@@ -1,0 +1,25 @@
+{
+    "system": [
+        "/blackbox/block_upgrade",
+        "/blackbox/block_info"
+    ],
+    "flyctrl": [
+    ],
+    "perception": [
+    ],
+    "navigation": [
+    ],
+    "sdr": [
+    ],
+    "camera": [
+    ],
+    "aging": [
+    ],
+    "hms": [
+    ],
+    "security": [
+    ],
+    "upgrade": [
+        "/blackbox/upgrade"
+    ]
+}

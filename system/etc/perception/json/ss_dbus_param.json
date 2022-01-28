@@ -1,0 +1,25 @@
+{
+    "peer_attr": [
+        {
+            "dev_type": "0x12",
+            "dev_num": "0x00"
+        },
+        {
+            "dev_type": "0x12",
+            "dev_num": "0x04"
+        },
+        {
+            "dev_type": "0x11",
+            "dev_num": "0x07"
+        }
+    ],
+    "topology": [
+        {
+            "node1_dev_type": "0x12",
+            "node1_dev_num": "0x04",
+            "node2_dev_type": "0x12",
+            "node2_dev_num": "0x00",
+            "weight": 1
+        }
+    ]
+}

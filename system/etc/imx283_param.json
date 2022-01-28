@@ -1,0 +1,159 @@
+{
+	"LINEARITY_TEST":	[
+		{
+			"CASE_NAME":	        "shutter_linearity",
+			"SECTION_NAME":	        "small",
+			"CAMERA_MODE":          ["still", "3x2", "30"],
+			"LIGHT_BOX":            256,
+			"RAW_SIZE":	            [5568, 3648],
+			"RAW_ROI":	            [1856, 1216, 3712, 2432],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "LINEARITY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+									{"shutter": "1/8000", "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.01},
+									{"shutter": "1/4096", "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.02},
+									{"shutter": "1/2048", "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.04},
+									{"shutter": "1/1024", "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.08},
+									{"shutter": "1/512",  "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.16},
+									{"shutter": "1/256",  "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.32},
+									{"shutter": "1/128",  "again":8.5677, "blacklevel_offset": 0, "ref_luma": 0.64}
+			]
+		},
+		{
+			"CASE_NAME":	        "shutter_linearity",
+			"SECTION_NAME":	        "middle",
+			"CAMERA_MODE":          ["still", "3x2", "30"],
+			"LIGHT_BOX":            32,
+			"RAW_SIZE":	            [5568, 3648],
+			"RAW_ROI":	            [1856, 1216, 3712, 2432],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "LINEARITY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+					                {"shutter": "1/128", "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.01},
+					                {"shutter": "1/64",  "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.02},
+					                {"shutter": "1/32",  "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.04},
+					                {"shutter": "1/16",  "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.08},
+					                {"shutter": "1/8",   "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.16},
+					                {"shutter": "1/4",   "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.32},
+					                {"shutter": "1/2",   "again":1.0264, "blacklevel_offset": 0, "ref_luma": 0.64}
+			]
+		},
+		{
+			"CASE_NAME":	        "shutter_linearity",
+			"SECTION_NAME":	        "large",
+			"CAMERA_MODE":          ["still", "3x2", "30"],
+			"LIGHT_BOX":            2,
+			"RAW_SIZE":	            [5568, 3648],
+			"RAW_ROI":	            [1856, 1216, 3712, 2432],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "LINEARITY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+					                {"shutter": "1/8",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.01},
+					                {"shutter": "1/4",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.02},
+					                {"shutter": "1/2",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.04},
+					                {"shutter": "1/1",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.08},
+					                {"shutter": "2/1",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.16},
+					                {"shutter": "4/1",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.32},
+					                {"shutter": "8/1",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.64}
+			]
+		},
+		{
+			"CASE_NAME":	        "again_linearity",
+			"SECTION_NAME":	        "",
+			"CAMERA_MODE":          ["still", "3x2", "30"],
+			"LIGHT_BOX":            128,
+			"RAW_SIZE":	            [5568, 3648],
+			"RAW_ROI":	            [1856, 1216, 3712, 2432],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":        "LINEARITY",
+			"JUDG_RANGE":	    2.0,
+			"CASE_TABLE":[
+					                {"shutter": "1/100",  "again":1.000, "blacklevel_offset": 0, "ref_luma": 0.03000},
+					                {"shutter": "1/100",  "again":1.475, "blacklevel_offset": 0, "ref_luma": 0.04425},
+					                {"shutter": "1/100",  "again":2.176, "blacklevel_offset": 0, "ref_luma": 0.06527},
+					                {"shutter": "1/100",  "again":3.209, "blacklevel_offset": 0, "ref_luma": 0.09627},
+					                {"shutter": "1/100",  "again":4.733, "blacklevel_offset": 0, "ref_luma": 0.14200},
+									{"shutter": "1/100",  "again":6.982, "blacklevel_offset": 0, "ref_luma": 0.20945},
+					                {"shutter": "1/100",  "again":10.298, "blacklevel_offset": 0, "ref_luma": 0.30894},
+					                {"shutter": "1/100",  "again":15.190, "blacklevel_offset": 0, "ref_luma": 0.45569},
+					                {"shutter": "1/100",  "again":22.405, "blacklevel_offset": 0, "ref_luma": 0.67214}
+			]
+		}
+	],
+	"CONSISTENCY_TEST":	[
+		{
+			"CASE_NAME":	        "all_mode_short_exposure",
+			"SECTION_NAME":	        "",
+			"SHUTTER":              "1/1000",
+			"AGAIN":                16,
+			"LIGHT_BOX":            256,
+			"RAW_ROI":              [0, 0, 0, 0],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "CONSISTENCY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+									{"CAMERA_MODE": ["still",    "3x2","30"],"RAW_SIZE": [5568, 3648],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["still",   "16x9","30"],"RAW_SIZE": [5568, 3078],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",     "4k","60"],"RAW_SIZE": [3840, 2160],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",   "2.7k","30"],"RAW_SIZE": [5472, 3078],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",   "1080","120"],"RAW_SIZE": [1920, 1080],"blacklevel_offset": 0,"ref_luma": 0.06}
+			]
+		},
+		{
+			"CASE_NAME":	        "all_mode_long_exposure",
+			"SECTION_NAME":	        "",
+			"SHUTTER":              "8/1",
+			"AGAIN":                1,
+			"LIGHT_BOX":            8,
+			"RAW_ROI":              [0, 0, 0, 0],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "CONSISTENCY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+									{"CAMERA_MODE": ["still",    "3x2","30"],"RAW_SIZE": [5568, 3648], "blacklevel_offset": 0, "ref_luma": 0.32},
+									{"CAMERA_MODE": ["still",   "16x9","30"],"RAW_SIZE": [5568, 3078], "blacklevel_offset": 0, "ref_luma": 0.32}
+			]
+		},
+		{
+			"CASE_NAME":	        "all_mode_normal_exposure",
+			"SECTION_NAME":	        "",
+			"SHUTTER":              "1/240",
+			"AGAIN":                10,
+			"LIGHT_BOX":            256,
+			"RAW_ROI":              [0, 0, 0, 0],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "CONSISTENCY",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+									{"CAMERA_MODE": ["still",    "3x2","30"],"RAW_SIZE": [5568, 3648],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["still",   "16x9","30"],"RAW_SIZE": [5568, 3078],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",     "4k","60"],"RAW_SIZE": [3840, 2160],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",   "2.7k","30"],"RAW_SIZE": [5472, 3078],"blacklevel_offset": 0,"ref_luma": 0.06},
+									{"CAMERA_MODE": ["video",   "1080","120"],"RAW_SIZE": [1920, 1080],"blacklevel_offset": 0,"ref_luma": 0.06}
+			]
+		}
+	],
+	"EQUIVALENCE_TEST":	[
+		{
+			"CASE_NAME":	        "still_equivalence",
+			"SECTION_NAME":	        "",
+			"CAMERA_MODE":          ["still", "3x2","30"],
+			"LIGHT_BOX":            256,
+			"RAW_SIZE":	            [5568, 3648],
+			"RAW_ROI":	            [1856, 1216, 3712, 2432],
+			"BLACK_LEVEL":	        4080,
+			"JUDG_TYPE":            "EQUIVALENCE",
+			"JUDG_RANGE":	        2.0,
+			"CASE_TABLE":[
+					                {"shutter": "1/10",  "again":1, "blacklevel_offset": 0, "ref_luma": 0.2},
+					                {"shutter": "1/20",  "again":2, "blacklevel_offset": 0, "ref_luma": 0.2},
+					                {"shutter": "1/40",  "again":4, "blacklevel_offset": 0, "ref_luma": 0.2},
+					                {"shutter": "1/80",  "again":8, "blacklevel_offset": 0, "ref_luma": 0.2},
+					                {"shutter": "1/160", "again":16, "blacklevel_offset": 0, "ref_luma": 0.2}
+			]
+		}
+	]
+}

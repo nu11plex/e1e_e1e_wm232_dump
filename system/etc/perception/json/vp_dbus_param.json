@@ -1,0 +1,6 @@
+{
+    "peer_attr" : [
+        { "dev_type" : "0x12", "dev_num" : "0x00" },
+        { "dev_type" : "0x12", "dev_num" : "0x04" }
+    ]
+}

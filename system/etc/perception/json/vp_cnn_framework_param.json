@@ -1,0 +1,76 @@
+{
+    "hw_cnn_init_table_rtos" : [
+        {
+            "cnn_net_type" : "WM232_WATER_TYPE",
+            "cnn_model_path" : "wm232_water_down_2",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_WATER_NIGHT_TYPE",
+            "cnn_model_path" : "wm232_water_down_night_4",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_SKY_TYPE",
+            "cnn_model_path" : "wm232_sky",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_SKY_LITE_TYPE",
+            "cnn_model_path" : "wm232_sky_lite",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_UP_PARSING_TYPE",
+            "cnn_model_path" : "wm232_up_parsing",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_PERSON_TYPE",
+            "cnn_model_path" : "wm232_person_parsing",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_GLARE_CLASSIFY_TYPE",
+            "cnn_model_path" : "wm232_glare_classify",
+            "init_or_not" : 1
+        }
+    ],
+    "hw_cnn_init_table_linux" : [
+        {
+            "cnn_net_type" : "WM232_WATER_TYPE",
+            "cnn_model_path" : "wm232_water_down_2",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_WATER_NIGHT_TYPE",
+            "cnn_model_path" : "wm232_water_down_night_4",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_SKY_TYPE",
+            "cnn_model_path" : "wm232_sky",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_SKY_LITE_TYPE",
+            "cnn_model_path" : "wm232_sky_lite",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_UP_PARSING_TYPE",
+            "cnn_model_path" : "wm232_up_parsing",
+            "init_or_not" : 0
+        },
+        {
+            "cnn_net_type" : "WM232_PERSON_TYPE",
+            "cnn_model_path" : "wm232_person_parsing",
+            "init_or_not" : 1
+        },
+        {
+            "cnn_net_type" : "WM232_GLARE_CLASSIFY_TYPE",
+            "cnn_model_path" : "wm232_glare_classify",
+            "init_or_not" : 0
+        }
+    ]
+}

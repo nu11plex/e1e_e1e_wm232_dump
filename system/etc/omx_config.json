@@ -1,0 +1,18 @@
+{
+    "component": [
+        {
+            "name": "libOmxFFDemuxer.so"
+        },
+        {
+            "name": "libOmxFFRemuxer.so"
+        },
+        {
+            "name": "libOmxEagleEnc.so"
+        },
+        {
+            "name": "libOmxEagleCodec.so"
+        }
+    ],
+    "default_log_level": "info",
+    "log_device": "logcat"
+}

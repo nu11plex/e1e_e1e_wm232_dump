@@ -1,0 +1,21 @@
+bFILE pano_shot_ctrl.bin 1860 pano_shot_ctrl
+int16   head
+uint64  time_stamp
+int8    status
+int8    app_pano_type
+float   cur_yaw
+float   cur_pitch
+float   cur_roll
+float   cam_buf_target_yaw
+float   cam_buf_target_pitch
+float   cam_buf_target_roll
+float   target_yaw
+float   target_pitch
+float   target_roll
+float   drone_yaw_v
+float   gimbal_yaw_v
+float   gimbal_pitch_v
+float   gimbal_roll_v
+float   camera_yaw
+float   drone_yaw
+int8    pano_shot_reset_yaw_pitch_over

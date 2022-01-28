@@ -1,0 +1,74 @@
+{
+    "common":{
+               "soc": "e1e",
+               "addr": "BB232U1",
+               "role": 1
+             },
+    "core":[
+        {
+            "module": "log_channel",
+            "configuration": {}
+        },
+        {
+            "module": "data_center",
+            "configuration": {
+                "task_interval_ms": 1000,
+                "data_list": [
+                    {"name": "boot_data", "update_interval": 0, "specific": {"property_name": "persist.sys.boot_index"}}
+                ]
+            }
+        },
+        {
+            "module": "bt_collector",
+            "configuration": {
+                "task_interval_ms": 2000,
+                "max_list_size": 100
+            }
+        },
+        {
+            "module": "log_collector",
+            "configuration": {
+                "polling": [
+                    {"name": "dji_app_agent",    "path": "/blackbox/dji_app_agent",        "module": "APP",    "check_rm": 1 },
+                    {"name": "flyctrl",          "path": "/blackbox/flyctrl",              "module": "FLY",    "check_rm": 1 },
+                    {"name": "dji_flight",       "path": "/blackbox/dji_flight",           "module": "FLY",    "check_rm": 1 },
+                    {"name": "da_log",           "path": "/blackbox/sdrs_log/da_log",      "module": "SDR",    "check_rm": 1 },
+                    {"name": "serial_log",       "path": "/blackbox/sdrs_log/serial_log",  "module": "SDR",    "check_rm": 1 },
+                    {"name": "ap_log",           "path": "/blackbox/sdrs_log/ap_log",      "module": "SDR",    "check_rm": 1 },
+                    {"name": "dsp0_log",         "path": "/blackbox/sdrs_log/dsp0_log",    "module": "SDR",    "check_rm": 1 },
+                    {"name": "dsp1_log",         "path": "/blackbox/sdrs_log/dsp1_log",    "module": "SDR",    "check_rm": 1 },
+                    {"name": "dsp2_log",         "path": "/blackbox/sdrs_log/dsp2_log",    "module": "SDR",    "check_rm": 1 },
+                    {"name": "rta7_log",         "path": "/blackbox/sdrs_log/rta7_log",    "module": "SDR",    "check_rm": 1 },
+                    {"name": "sdrs_dump",        "path": "/blackbox/p1_dump_data",         "module": "SDR",    "check_rm": 1 },
+                    {"name": "navigation",       "path": "/blackbox/navigation",           "module": "NAV",    "check_rm": 1 },
+                    {"name": "navigation_fc",    "path": "/blackbox/navigation_fc",        "module": "NAV",    "check_rm": 1 },
+                    {"name": "perception",       "path": "/blackbox/dji_perception",       "module": "PER",    "check_rm": 1 },
+                    {"name": "ss_dsp",           "path": "/blackbox/ss_dsp_manager",       "module": "PER",    "check_rm": 1 }
+                ],
+                "necessity": [
+                    {"name": "camera",           "path": "/blackbox/camera/",              "module": "CAM" },
+                    {"name": "system",           "path": "/blackbox/system/",              "module": "SYS" },
+                    {"name": "tags",             "path": "/blackbox/tags/",                "module": "TAG" },
+                    {"name": "wl",               "path": "/blackbox/wl/",                  "module": "WL"  },
+                    {"name": "info",             "path": "/blackbox/info",                 "module": "INFO"}
+                ]
+            }
+        }
+    ],
+    "application":[
+        {
+            "module": "log_agent",
+            "configuration": {}
+        },
+        {
+            "module": "log_exporter",
+            "configuration": {}
+        }
+    ],
+    "utility": [
+        {
+            "module": "log_compressor",
+            "configuration": {}
+        }
+    ]
+}

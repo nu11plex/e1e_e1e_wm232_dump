@@ -1,0 +1,167 @@
+{
+  "TestAction": {
+    "hover_drift": {
+      "flyactions": [
+        {"name": "Hover1", "start": 1000, "duration": 4000}
+      ],
+      "exceptions": [
+        {"case": "hori", "threshold": 0.2, "name": "HOVER_DRIFT_HORI"},
+        {"case": "vert", "threshold": 0.1, "name": "HOVER_DRIFT_VERT"}
+      ]
+    },
+    "vib": {
+      "flyactions": [
+        {"name": "Hover1", "start": 500, "duration": 4000}
+      ],
+      "exceptions": [
+        {"case": "flag", "threshold": 1.8, "name": "ACC_VIB_X_FATAL"},
+        {"case": "flag", "threshold": 1.8, "name": "ACC_VIB_Y_FATAL"},
+        {"case": "flag", "threshold": 1.8, "name": "ACC_VIB_Z_FATAL"},
+        {"case": "flag", "threshold": 140, "name": "GYRO_VIB_X_FATAL"},
+        {"case": "flag", "threshold": 140, "name": "GYRO_VIB_y_FATAL"},
+        {"case": "flag", "threshold": 140, "name": "GYRO_VIB_Z_FATAL"}
+      ]
+    },
+	"wifi": {
+      "flyactions": [
+        {"name": "Hover1", "start": 0, "duration": -1},
+        {"name": "WaitForWifi", "start": 0, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "null", "threshold": 1, "name": "null"}
+      ]
+    },
+    "baro": {
+      "flyactions": [
+        {"name": "Hover1", "start": 1000, "duration": 2000},
+        {"name": "Turnyaw1", "start": 0, "duration": 3500}
+      ],
+      "exceptions": [
+        {"case": "diff", "threshold": 1.0, "name": "BARO_BAD"}
+      ]
+    },
+    "turnyaw_drift": {
+      "flyactions": [
+        {"name": "Turnyaw1", "start": 3000, "duration": 8000}
+      ],
+      "exceptions": [
+        {"case": "hori", "threshold": 0.25,  "name": "TURNYAW_DRIFT_HORI"},
+        {"case": "vert", "threshold": 0.15, "name": "TURNYAW_DRIFT_VERT"}
+      ]
+    },
+    "compass": {
+      "flyactions": [
+        {"name": "Turnyaw1", "start": 0, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "scale", "threshold": 0.1, "name": "COMPASS_BAD"},
+        {"case": "bias",  "threshold": 300, "name": "COMPASS_BAD"},
+        {"case": "mold",  "threshold": 700, "name": "COMPASS_BAD"}
+      ]
+    },
+    "vio": {
+      "flyactions": [
+        {"name": "Route1", "start": 0, "duration": -1},
+        {"name": "Turnyaw1", "start": 0, "duration": -1},
+        {"name": "Light1", "start": 0, "duration": -1},
+        {"name": "Entry2", "start": 0, "duration": -1},
+        {"name": "Cali1", "start": 0, "duration": -1},
+        {"name": "MoveToCali2", "start": 0, "duration": -1},
+        {"name": "DownToCali2", "start": 0, "duration": -1},
+		{"name": "Cali2", "start": 0, "duration": -1},
+		{"name": "TurnyawToVideo", "start": 0, "duration": -1},
+		{"name": "Video2", "start": 0, "duration": -1},
+		{"name": "Light2", "start": 0, "duration": -1}
+
+      ],
+      "exceptions": [
+        {"case": "hori", "threshold": 0.2, "name": "VIO_BAD"}
+      ]
+    },
+    "tof_1d": {
+      "flyactions": [
+        {"name": "Route1", "start": 1000, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "percent", "threshold": 0.1, "name": "TOF_1D_BAD"}
+      ]
+    },
+    "body_shake": {
+      "flyactions": [
+        {"name": "Hover1", "start": 0, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "gyro_x", "threshold": 500, "name": "GYRO_FATAL"},
+        {"case": "gyro_y", "threshold": 500, "name": "GYRO_FATAL"},
+        {"case": "gyro_z", "threshold": 500, "name": "GYRO_FATAL"}
+      ]
+    },
+    "take_video": {
+      "flyactions": [
+        {"name": "Cali2", "start": 2000, "duration": -1},
+        {"name": "TurnyawToVideo", "start": 0, "duration": -1},
+		{"name": "Video2", "start": 4000, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "flag", "threshold": 80, "name": "GIM_INNER_BAD"},
+        {"case": "flag", "threshold": 90, "name": "GIM_MID_BAD"},
+        {"case": "flag", "threshold": 80, "name": "GIM_OUTER_BAD"}
+      ]
+    },
+    "switch_atti_check": {
+      "flyactions": [
+        {"name": "Takeoff", "start": 0, "duration": -1},
+		{"name": "Entry1", "start": 0, "duration": -1},
+        {"name": "Hover1", "start": 0, "duration": -1},
+        {"name": "Route1", "start": 0, "duration": -1},
+        {"name": "Turnyaw1", "start": 0, "duration": -1},
+        {"name": "Light1", "start": 0, "duration": -1},
+        {"name": "Entry2", "start": 0, "duration": -1},
+        {"name": "Cali1", "start": 0, "duration": -1},
+        {"name": "MoveToCali2", "start": 0, "duration": -1},
+        {"name": "DownToCali2", "start": 0, "duration": -1},
+		{"name": "Cali2", "start": 0, "duration": -1},
+		{"name": "TurnyawToVideo", "start": 0, "duration": -1},
+		{"name": "Video2", "start": 0, "duration": -1},
+		{"name": "Light2", "start": 0, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "flag", "threshold": 1, "name": "VIO_SWITCH_ATTI"}
+      ]
+    },
+    "gimbal_turn": {
+      "flyactions": [
+        {"name": "Hover1", "start": 0, "duration": 2000}
+      ],
+      "exceptions": [
+        {"case": "diff", "threshold": 10, "name": "GIM_TURN_BAD"}
+      ]
+    },
+    "perception_cali": {
+      "flyactions": [
+        {"name": "Light2", "start": 0, "duration": -1}
+      ],
+      "exceptions": [
+        {"case": "flag", "threshold": 1, "name": "PERCEPTION_CALI_FAIL"},
+        {"case": "flag", "threshold": 1, "name": "SYSTEM_FATAL"}
+      ]
+    },
+    "gimbal_cali": {
+      "flyactions": [
+        {"name": "Cali1", "start": 500, "duration": 1900},
+		{"name": "MoveToCali2", "start": 0, "duration": -1},
+        {"name": "Cali2", "start": 500, "duration": 1500}
+      ],
+      "exceptions": [
+        {"case": "roll",  "threshold": 1.5, "name": "GIM_BEVEL_BAD"},
+        {"case": "pitch", "threshold": 3.0, "name": "GIM_BEVEL_BAD"},
+        {"case": "roll",  "threshold": 2.0, "name": "GIM_BEVEL_FATAL"},
+        {"case": "pitch", "threshold": 3.5, "name": "GIM_BEVEL_FATAL"},
+        {"case": "flag", "threshold": 0, "name": "GIM_BEVEL_FAIL"},
+        {"case": "flag", "threshold": 13, "name": "NO_MAIN_CAMERA_PARAMS"},
+        {"case": "flag", "threshold": 0, "name": "SET_FOCUS_LENTH_FAIL"},
+        {"case": "yaw", "threshold": 2, "name": "JOINT_ANGLE_ZERO_CHECK_FATAL"}
+      ]
+    }
+  }
+}

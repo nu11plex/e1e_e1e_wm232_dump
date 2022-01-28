@@ -1,0 +1,64 @@
+{
+    "frame_buffers": {
+        "pool_active_num": 2,
+        "pools": [
+        {"buffer_num": 2, "width": 3840, "height": 2160, "format": "NV12" },
+        {"buffer_num": 2, "width": 1920, "height": 1080, "format": "NV12" } ]
+    },
+
+    "stream_buffers": {
+        "pool_active_num": 2,
+        "pools": [
+        {"mode": "storage", "buffer_num": 2, "buffer_size": 73400320, "cluster_size": 524288,
+            "_comments": "each buffer size=140 clusters"},
+        {"mode": "storage", "buffer_num": 2, "buffer_size": 36700160, "cluster_size": 262144,
+            "_comments": "each buffer size=140 clusters"}]
+    },
+
+    "venc": {
+        "instance_active_num": 2,
+        "instances": [
+        {
+            "frame_buffer_pool_id": 0,
+            "stream_buffer_pool_id": 0,
+            "codec_type": "H264",
+            "bitrate": 150000000,
+            "total_enc": 1000,
+            "framerate": 30,
+            "in_file": "/storage/sdcard0/fly_3840x2160_11f.nv12",
+            "out_file": "NULL",
+            "scale": "1920x1080",
+            "crop_area": "0 0 0 0",
+            "hlg10_enable": 0,
+            "sync": 0,
+            "bitdepth_opt": 0,
+            "perf_test": 1,
+            "fspctrl": 0,
+            "apm": 0,
+            "ppm": 0,
+            "clk_divided": 0
+        },
+        {
+            "frame_buffer_pool_id": 1,
+            "stream_buffer_pool_id": 1,
+            "codec_type": "H264",
+            "bitrate": 3000000,
+            "total_enc": 1000,
+            "framerate": 30,
+            "in_file": "/storage/sdcard0/crowd_run_1080p50_yuv420sp.yuv",
+            "out_file": "NULL",
+            "scale": "NULL",
+            "crop_area": "0 0 0 0",
+            "hlg10_enable": 0,
+            "sync": 0,
+            "bitdepth_opt": 0,
+            "perf_test": 1,
+            "fspctrl": 0,
+            "apm": 0,
+            "ppm": 0,
+            "clk_divided": 0
+        }
+        ]
+    }
+
+}

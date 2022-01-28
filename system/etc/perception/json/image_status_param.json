@@ -1,0 +1,84 @@
+{
+    "img_sts_cfgs": [
+        {
+            "img_sts_dir": "IMG_STS_DOWN",
+            "img_sts_flag": 1,
+            "glare_check_swi": 0,
+            "dark_bright_level": 2,
+            "too_dark_step_in_thresholds": [6, 12],
+            "too_dark_step_out_thresholds": [12, 20],
+            "too_dark_gain_thresholds": [6.5, 4],
+            "too_bright_step_in_thresholds": [310000, 210000],
+            "too_bright_step_out_thresholds": [290000, 190000],
+            "brightness_inconsistent_ratio_step_in_threshold": 0.55,
+            "brightness_inconsistent_ratio_step_out_threshold": 0.45,
+            "sensor_num": 2,
+            "aec_data_topic_names": [
+                "vps_aec_current_info_00",
+                "vps_aec_current_info_01"
+            ],
+            "occ_detection_num": 0
+        },
+        {
+            "img_sts_dir": "IMG_STS_FRONT",
+            "img_sts_flag": 1,
+            "glare_check_swi": 0,
+            "dark_bright_level": 2,
+            "too_dark_step_in_thresholds": [12, 20],
+            "too_dark_step_out_thresholds": [20, 32],
+            "too_dark_gain_thresholds": [6.5, 4],
+            "too_bright_step_in_thresholds": [310000, 210000],
+            "too_bright_step_out_thresholds": [290000, 190000],
+            "brightness_inconsistent_ratio_step_in_threshold": 0.55,
+            "brightness_inconsistent_ratio_step_out_threshold": 0.45,
+            "sensor_num": 2,
+            "aec_data_topic_names": [
+                "vps_aec_current_info_02",
+                "vps_aec_current_info_03"
+            ],
+            "occ_detection_num": 0
+        },
+        {
+            "img_sts_dir": "IMG_STS_BACK",
+            "img_sts_flag": 1,
+            "glare_check_swi": 0,
+            "dark_bright_level": 2,
+            "too_dark_step_in_thresholds": [12, 20],
+            "too_dark_step_out_thresholds": [20, 32],
+            "too_dark_gain_thresholds": [6.5, 4],
+            "too_bright_step_in_thresholds": [310000, 210000],
+            "too_bright_step_out_thresholds": [290000, 190000],
+            "brightness_inconsistent_ratio_step_in_threshold": 0.55,
+            "brightness_inconsistent_ratio_step_out_threshold": 0.45,
+            "sensor_num": 2,
+            "aec_data_topic_names": [
+                "vps_aec_current_info_06",
+                "vps_aec_current_info_07"
+            ],
+            "occ_detection_num": 0
+        },
+        {
+            "img_sts_dir": "IMG_STS_UP",
+            "img_sts_flag": 1,
+            "glare_check_swi": 0,
+            "dark_bright_level": 2,
+            "too_dark_step_in_thresholds": [12, 20],
+            "too_dark_step_out_thresholds": [20, 32],
+            "too_dark_gain_thresholds": [6.5, 4],
+            "too_bright_step_in_thresholds": [310000, 210000],
+            "too_bright_step_out_thresholds": [290000, 190000],
+            "brightness_inconsistent_ratio_step_in_threshold": 0.55,
+            "brightness_inconsistent_ratio_step_out_threshold": 0.45,
+            "sensor_num": 2,
+            "aec_data_topic_names": [
+                "vps_aec_current_info_10",
+                "vps_aec_current_info_11"
+            ],
+            "occ_detection_num": 2,
+            "occ_result_topic_names": [
+                "up_left_occlusion",
+                "up_right_occlusion"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,381 @@
+{
+  "ActionList": {
+    "Takeoff": {
+      "type": "TAKEOFF",
+      "config": {
+        "hori_ctrl_with_vo": true,
+        "use_marker": true,
+        "base_point": [1.6, 7.1, -1.8],
+        "hori_ctrl_vel_bound": [0.05, 0.8],
+        "vert_ctrl_vel_bound": [0.1, 1.0],
+        "hori_ctrl_pid": [1.0, 0.2],
+        "vert_ctrl_pid": [1.0, 0.1],
+        "timeout": 3
+      }
+    },
+    "Entry": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":false,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 0,
+        "light_color": 3,
+        "detect_timeout": 10,
+        "start_pos": [1.6, 7.1, -1.8],
+        "start_pos_fix": [1.6, 7.1, -1.8],
+        "end_pos": [1.7, 6, -2.3],
+        "end_pos_fix": [1.7, 6, -2.3],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Hover1": {
+      "type": "HOVER",
+      "config": {
+        "use_marker": false,
+        "wait_time":1,
+        "start_pos": [0, 0, 0],
+        "end_pos": [1.7, 6, -2.3],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Route1": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":false,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 0,
+        "light_color": 3,
+        "detect_timeout": 10,
+        "start_pos": [1.7, 6, -2.3],
+        "start_pos_fix": [1.7, 6, -2.3],
+        "end_pos": [1.7, 4.2, -1.8],
+        "end_pos_fix": [1.7, 4.2, -1.8],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [1.5, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Turnyaw1": {
+      "type": "TURNYAW",
+      "config": {
+        "use_marker": false,
+        "target_yaw_angle": 1080,
+        "turn_yaw_rate": 150,
+        "ctrl_pid": 1.5,
+        "timeout": 15
+      }
+    },
+    "Light1": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":true,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 1,
+        "light_color": 3,
+        "detect_timeout": 30,
+        "start_pos": [1.7, 4.2, -1.8],
+        "start_pos_fix": [1.7, 4.2, -1.8],
+        "end_pos": [1.7, 4.2, -2.3],
+        "end_pos_fix": [1.7, 4.2, -2.3],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Entry2": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":false,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 0,
+        "light_color": 3,
+        "detect_timeout": 10,
+        "start_pos": [1.7, 4.2, -2.3],
+        "start_pos_fix": [1.7, 4.2, -2.3],
+        "end_pos": [1.7, 2.2, -1.7],
+        "end_pos_fix": [1.7, 2.2, -1.7],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [1.5, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },   
+    "Cali1": {
+      "type": "HOVER",
+      "config": {
+        "use_marker": false,
+        "wait_time":1,
+        "detect_timeout": 10,
+        "start_pos": [0, 0, 0],
+        "end_pos": [1.7, 2.2, -1.7],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 2.5
+      }
+    },
+    "MoveToCali2": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":true,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 0,
+        "light_color": 3,
+        "detect_timeout": 10,
+        "start_pos": [1.7, 2.2, -1.7],
+        "start_pos_fix": [1.7, 2.2, -1.7],
+        "end_pos": [1.7, 2.7, -1.7],
+        "end_pos_fix": [1.7, 2.65, -1.7],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "DownToCali2": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": true,
+        "vert_only": true,
+        "stable_stop":true,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 0,
+        "light_color": 3,
+        "detect_timeout": 10,
+        "start_pos": [1.7, 2.7, -1.7],
+        "start_pos_fix": [1.7, 2.65, -1.7],
+        "end_pos": [1.7, 2.7, -1],
+        "end_pos_fix": [1.7, 2.65, -1],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Cali2": {
+      "type": "HOVER",
+      "config": {
+        "use_marker": false,
+        "wait_time":1,
+        "detect_timeout": 10,
+        "start_pos": [0, 0, 0],
+        "end_pos": [1.7, 2.8, -1.1],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 7.5
+      }
+    },
+     "TurnyawToVideo": {
+      "type": "TURNYAW",
+      "config": {
+        "use_marker": false,
+        "target_yaw_angle": 80,
+        "turn_yaw_rate": 150,
+        "ctrl_pid": 1.5,
+        "timeout": 4
+      }
+    },
+    "Video2": {
+      "type": "HOVER",
+      "config": {
+        "use_marker": false,
+        "wait_time":1,
+        "detect_timeout": 10,
+        "start_pos": [0, 0, 0],
+        "end_pos": [1.7, 2.8, -1.1],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": 0,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 6.5
+      }
+    },
+    "Light2": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":true,
+        "wait_flag":false,
+        "wait_time":1,
+        "detect_light_flag": 1,
+        "light_color": 1,
+        "detect_timeout": 40,
+        "start_pos": [1.7, 2.8, -1.0],
+        "start_pos_fix": [1.7, 2.65, -1.0],
+        "end_pos": [1.7, 2.2, -2.3],
+        "end_pos_fix": [1.7, 2.2, -2.3],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 5
+      }
+    },
+    "Exit": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":false,
+        "wait_flag":true,
+        "wait_time":1,
+        "update_marker": 1,
+        "detect_light_flag": 0,
+        "light_color": 1,
+        "detect_timeout": 10,
+        "start_pos": [1.7, 2.2, -2.3],
+        "start_pos_fix": [1.7, 2.2, -2.3],
+        "end_pos": [1.7, 0.65, -1.3],
+        "end_pos_fix": [1.7, 0.65, -1.3],
+        "target_vel": 1.5,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 3.5
+      }
+    },
+    "Out": {
+      "type": "FLYROUTE",
+      "config": {
+        "use_marker": true,
+        "stable_ctrl": false,
+        "vert_only": false,
+        "stable_stop":false,
+        "wait_flag":true,
+        "wait_time":1,
+        "update_marker": 0,
+        "detect_light_flag": 0,
+        "light_color": 1,
+        "detect_timeout": 30,
+        "start_pos": [1.7, 0.65, -1.3],
+        "start_pos_fix": [1.7, 0.65, -1.3],
+        "end_pos": [1.0, 0.65, -1.3],
+        "end_pos_fix": [1.0, 0.65, -1.3],
+        "target_vel": 1,
+        "start_yaw": 0,
+        "end_yaw": -90,
+        "target_yawrate": 60,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [2, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 3
+      }
+    },
+    "Land": {
+      "type": "LAND",
+      "config": {
+        "use_marker": true,
+        "vert_only": false,
+        "autoland": false,
+        "stable_ctrl": true,
+        "end_pos": [0.7, 0.65, 0],
+        "target_vel": 1.5,
+        "end_yaw": -90,
+        "target_yawrate": 45,
+        "xy_pid": [1.5, 0.2, 0],
+        "xy_pid_normal": [0, 0, 0],
+        "z_pid": [0.8, 0, 0],
+        "yaw_pid": [1.5, 0, 0],
+        "timeout": 6
+      }
+    },
+	"WaitForWifi": {
+      "type": "WAIT",
+      "config": {
+        "timeout": 60
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "name": "DJI Navigation Config File",
+  "version": "0.1.0.1",
+  "Tracking Config": {
+    "VS_APPCFG_TRACK_MODE": {
+      "Description": "APP config track mode,0: Tailgate, 2:Parellea,4: spotlight ",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_CTRL_GAIN_BACKWARD": {
+      "Description": "APP config backward in tracking tailgate mode",
+      "Data": [
+          {"Platform": "WM232", "Value": 0.5, "minValue": 0.0, "maxValue": 0.5, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_ACTIVE_OBSTACLE_AVOID": {
+      "Description": "active obstacle avoid  config",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_AUTO_CIRCLE_Y_SPEED_RATE": {
+      "Description": "VS_APPCFG_TRACK_AUTO_CIRCLE_Y_SPEED_RATE",
+      "Data": [
+          {"Platform": "WM232", "Value": 0.0, "minValue": -5.0, "maxValue": 5.0, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_MAX_SPEED": {
+      "Description": "VS_APPCFG_TRACK_MAX_SPEED",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 12, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_MAX_AVOIDNANCE_SPEED": {
+      "Description": "VS_APPCFG_MAX_AVOIDNANCE_SPEED",
+      "Data": [
+          {"Platform": "WM232", "Value": 8, "minValue": 8, "maxValue": 8, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_HEIGHT_SPEED_TRACKING": {
+      "Description": "allow tracking without obs avoidance config",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_MULTI_OBJ": {
+      "Description": "VS_APPCFG_MULTI_OBJ mode ",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_TRACK_DYNAMIC_HOME": {
+      "Description": "update dynamic home point",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 0}
+      ]
+    },
+
+    "VS_APPCFG_PANO_SAVING_SRC_IMG": {
+      "Description": "VS_APPCFG_PANO_SAVING_SRC_IMG",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    }
+  },
+  "Storage Config": {
+    "Enable save camera image": {
+      "Description": "enable save camera image",
+      "Data": [
+          {"Platform": "WM232", "Value": 2, "minValue": 0, "maxValue": 2, "enable": 1}
+      ]
+    },
+    "Enable save front image": {
+      "Description": "enable save front image,frist bit is left raw,second bit is right raw,second bit is dispairty",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    },
+    "Enable save down image": {
+      "Description": "enable save down image,frist bit is left raw,second bit is right raw,second bit is dispairty",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    },
+    "Enable save rear image": {
+      "Description": "enable save rear image,frist bit is left raw,second bit is right raw,second bit is dispairty",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    },
+    "Enable index file number": {
+      "Description": "config blackbox/navigation flie number",
+      "Data": [
+          {"Platform": "WM232", "Value": 10, "minValue": 0, "maxValue": 10, "enable": 1}
+      ]
+    },
+    "Enable emmc folder max size": {
+      "Description": "config blackbox/navigation max folder size on emmc, unit is MB",
+      "Data": [
+          {"Platform": "WM232", "Value": 1200, "minValue": 1100, "maxValue": 1200, "enable": 1}
+      ]
+    },
+    "Enable emmc folder min size": {
+      "Description": "config blackbox/navigation min folder size on emmc, unit is MB",
+      "Data": [
+          {"Platform": "WM232", "Value": 1100, "minValue": 1100, "maxValue": 1200, "enable": 1}
+      ]
+    },
+    "Enable ssd folder max size": {
+      "Description": "config blackbox/navigation max folder size on ssd, unit is GB",
+      "Data": [
+          {"Platform": "WM232", "Value": 500, "minValue": 400, "maxValue": 500, "enable": 1}
+      ]
+    },
+    "Enable ssd folder min size": {
+      "Description": "config blackbox/navigation min folder size on ssd, unit is GB",
+      "Data": [
+          {"Platform": "WM232", "Value": 400, "minValue": 400, "maxValue": 500, "enable": 1}
+      ]
+    }
+  },
+  "Stick Config": {
+    "VS_APPCFG_APAS_ENABLE_SWITCH": {
+      "Description": "the switch of omni avoid",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    },
+    "VS_APPCFG_APAS_AUTO_AVOID_SWITCH": {
+      "Description": "the switch of auto avoid in omni avoid",
+      "Data": [
+          {"Platform": "WM232", "Value": 1, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    }
+  },
+  "Hyperlapse Config": {
+    "HL_APPCFG_SWITCH_ON": {
+      "Description": "the switch of hyperlapse",
+      "Data": [
+          {"Platform": "WM232", "Value": 1, "minValue": 0, "maxValue": 1, "enable": 1}
+      ]
+    },
+    "HL_APPCFG_ADJUST_VEL": {
+      "Description": "the user set velocity of hyperlapse",
+      "Data": [
+          {"Platform": "WM232", "Value": 0.5, "minValue": 0.1, "maxValue": 3, "enable": 1}
+      ]
+    }
+  },
+  "Spotlight Zoom Config": {
+    "surround_speed": {
+      "Description": "surround mode angular rate. unit: deg/s",
+      "Data": [
+          {"Platform": "WM232", "Value": 0.0, "minValue": -5.0, "maxValue": 5.0, "enable": 1}
+      ]
+    },
+    "max_speed": {
+      "Description": "max surround speed without obs avoid. unit: m/s",
+      "Data": [
+          {"Platform": "WM232", "Value": 0.0, "minValue": 0.0, "maxValue": 12.0, "enable": 1}
+      ]
+    },
+    "max_avoidance_speed": {
+      "Description": "max surround speed with obs avoid. unit: m/s",
+      "Data": [
+          {"Platform": "WM232", "Value": 8.0, "minValue": 8.0, "maxValue": 8.0, "enable": 1}
+      ]
+    },
+    "allow_high_speed": {
+      "Description": "allow high speed surrounding without obs avoidance",
+      "Data": [
+          {"Platform": "WM232", "Value": 0, "minValue": 0, "maxValue": 255, "enable": 1}
+      ]
+    }
+  }
+}

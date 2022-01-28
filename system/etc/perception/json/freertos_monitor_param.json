@@ -1,0 +1,8 @@
+{
+    "DEF_FREERTOS_MONITOR_PARAM": {
+        "rtos_hb_timeout": "2",
+        "need_rsysrq_dump": "1",
+        "need_recover": "0",
+        "max_reco_times": "3"
+    }
+}

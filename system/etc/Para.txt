@@ -1,0 +1,9 @@
+PollutePara
+ThreshLow:60
+ThreshHigh:250
+Scale:0.4
+iThreshold:120
+PercentOfMax:0.7
+FillThresh:90
+MinFillThresh:92
+AreaThresh:100

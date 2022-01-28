@@ -1,0 +1,20 @@
+{
+    "DEF_XX_PARAM": {
+        "buf_size": "256",
+        "param_f": [
+            "10.1",
+            "20.2",
+            "30.3",
+            "40.4"
+        ],
+        "offset": "0x2FFFFFFFF",
+        "time": "0x8FFFFFFFFFFFFFFF",
+        "flag": "0x8F",
+        "id": "0x8FFF",
+        "bias": "11.2233445566",
+        "param_aa": {
+            "param_i": "0x10",
+            "param_s": "example string"
+        }
+    }
+}

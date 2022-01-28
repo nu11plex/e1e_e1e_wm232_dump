@@ -1,0 +1,80 @@
+{
+    "product": "wm232",
+    "free_size": {
+        "blackbox": "1600",
+        "userdata": "25",
+        "cache": "10",
+        "cali": "10"
+    },
+    "log": {
+        "system": [
+            "/blackbox/system/",
+            "/blackbox/dji_app_agent/",
+            "/blackbox/adsb/",
+            "/blackbox/info/",
+            "/data/coredump/",
+            "/data/tombstones/",
+            "/data/dji/amt/",
+            "/data/burying.db",
+            "/data/power_on_times.txt"
+        ],
+        "flyctrl": [
+            "/blackbox/flyctrl/",
+            "/blackbox/dji_flight/"
+        ],
+        "gimbal": [
+            "/blackbox/flyctrl/"
+        ],
+        "perception": [
+            "/blackbox/dji_perception/",
+            "/blackbox/ss_dsp_manager/",
+            "/data/dji/cfg/ssd_en",
+            "/data/dji/cfg/cc_en",
+            "cali/dji_perception/DL.png",
+            "cali/dji_perception/DR.png",
+            "cali/dji_perception/FL.png",
+            "cali/dji_perception/FR.png",
+            "cali/dji_perception/BL.png",
+            "cali/dji_perception/BR.png",
+            "cali/dji_perception/0Lmin.png",
+            "cali/dji_perception/0Lmax.png",
+            "cali/dji_perception/0Rmin.png",
+            "cali/dji_perception/0Rmax.png",
+            "cali/dji_perception/1Lmin.png",
+            "cali/dji_perception/1Lmax.png",
+            "cali/dji_perception/1Rmin.png",
+            "cali/dji_perception/1Rmax.png",
+            "cali/dji_perception/2Lmin.png",
+            "cali/dji_perception/2Lmax.png",
+            "cali/dji_perception/2Rmin.png",
+            "cali/dji_perception/2Rmax.png",
+            "cali/dji_perception/auto_mask.png",
+            "cali/dji_perception/pt1.txt",
+            "cali/dji_perception/pt2.txt",
+            "cali/dji_perception/log.txt"
+        ],
+        "navigation": [
+            "/blackbox/navigation/",
+            "/blackbox/navigation_fc/",
+            "data/dji_navigation/"
+        ],
+        "ofdm": [
+            "/blackbox/sdrs_log/"
+        ],
+        "camera": [
+            "/data/dji_camera_IMX283.usf",
+            "/blackbox/camera/",
+            "/cali/camera/cali/",
+            "/data/camera_current.tsf",
+            "/data/cam_f2f/",
+            "/data/dji_debug_camera.xml",
+            "/data/dji_debug_rcamera.xml",
+            "/camera/"
+        ],
+        "autotest": [
+            "/blackbox/autotest/",
+            "/blackbox/autoflight/",
+            "/camera/TestReport/"
+        ]
+    }
+}

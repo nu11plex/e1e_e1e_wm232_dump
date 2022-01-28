@@ -1,0 +1,102 @@
+{
+    "dsp_icc_route" : [
+        {
+            "dsp_id" : "0",
+            "msg_id" : [
+                "sgbm_path_disp",
+                "pixel_preproce",
+                "calc_avg_lum_10bit",
+                "VCR_ACC_FUNC",
+                "CNN0_ACC_FUNC",
+                "CNN1_ACC_FUNC",
+                "CNN_FUNCTION",
+                "CNN_SKY_PREPROCESS",
+                "speckle_filter",
+                "speckle_filter_line",
+                "SS_DSP_CONFIG",
+                "CNN_SKY_PREPROCESS",
+                "speckle_filter",
+                "speckle_filter_line",
+                "SS_DSP_CONFIG",
+                "SGBM_COMBINE_CFG",
+                "PIXEL_PREPROCESS_CFG",
+                "SS_STATUS_LOG",
+                "ACC_DRV_SHARE_INFO",
+                "VACC_CROP_INFO_SHARE",
+                "UPSAMPLE_NEARBY_FUNC",
+                "DSP_GLOBAL_TS_OFFSET",
+                "histogram",
+                "sgbm_scheduler",
+                "sgbm_reconfig",
+                "ZNCC",
+                "essential_RanSaC",
+                "get_max_label",
+                "position_map",
+                "downsample",
+                "RanSaC_PnP",
+                "harris_filter",
+                "depth_map",
+                "DSP_SGBM_COMBINE",
+                "sgbm_mono_cost",
+                "cost_transpose",
+                "givens_rotation",
+                "DSP_DOWNSAMPLE_VXOR",
+                "DSP_COV_PROPAGATION",
+                "warp_pyramid",
+                "DSP_CVT_IMAGE",
+                "DSP_HARRIS_FILTER_CFG",
+                "UPSAMPLE_NEARBY_FUNC",
+                "fpnc",
+                "fpnc_init_cali",
+                "fpnc_update_gain",
+                "config_fpnc_switch_mode",
+                "acc_share_info",
+                "gdc_init_configuration",
+                "vp_rtos_harris_filter_init",
+                "vp_rtos_e2_sgbm_init",
+                "vp_rtos_acc_interrupt_register",
+                "vp_rtos_sgbm_preprocess_int",
+                "init_pixel_10bit_to_8bit_table",
+                "init_lsc",
+                "avg_lum_without_sky",
+                "get_sky_num"
+            ]
+        },
+        {
+            "dsp_id" : "1",
+            "msg_id" : [
+                "RanSaC_PnP 6DOF",
+                "harris_filter",
+                "depth_map",
+                "DSP_SGBM_COMBINE",
+                "sgbm_mono_cost",
+                "cost_transpose",
+                "givens_rotation",
+                "DSP_DOWNSAMPLE_VXOR",
+                "DSP_COV_PROPAGATION",
+                "DSP_HOG",
+                "warp_pyramid",
+                "DSP_CVT_IMAGE",
+                "pyramid_klt",
+                "DSP_HARRIS_FILTER_CFG",
+                "DSP_HOG_CFG",
+                "DSP_GLOBAL_TS_OFFSET",
+                "harris",
+                "gauss_pyramid",
+                "tensor_warp_corr"
+            ]
+        },
+        {
+            "dsp_id" : "2",
+            "msg_id" : [
+                "semi_dense_stereo"
+            ]
+        },
+        {
+            "dsp_id" : "3",
+            "msg_id" : [
+                "semi_dense_stereo"
+            ]
+        }
+    ]
+}
