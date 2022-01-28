@@ -1,0 +1,96 @@
+{
+    "DEF_VACC_DEBUG_PARAM": {
+        "img_dump_config": [
+            {
+                "id": "0",
+                "submodule_name": "vmux",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "1",
+                "submodule_name": "visp",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "2",
+                "submodule_name": "rectify",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "3",
+                "submodule_name": "pyramid",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "4",
+                "submodule_name": "harris",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "5",
+                "submodule_name": "disparity",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "6",
+                "submodule_name": "filtered_disparity",
+                "period": "100",
+                "enable": "0"
+            },
+            {
+                "id": "7",
+                "submodule_name": "reserved",
+                "period": "100",
+                "enable": "0"
+            }
+        ],
+        "reg_dump_config": [
+            {
+                "id": "0",
+                "submodule_name": "vmux",
+                "enable": "0"
+            },
+            {
+                "id": "1",
+                "submodule_name": "visp",
+                "enable": "0"
+            },
+            {
+                "id": "2",
+                "submodule_name": "rectify",
+                "enable": "0"
+            },
+            {
+                "id": "3",
+                "submodule_name": "pyramid",
+                "enable": "0"
+            },
+            {
+                "id": "4",
+                "submodule_name": "harris",
+                "enable": "0"
+            },
+            {
+                "id": "5",
+                "submodule_name": "klt",
+                "enable": "0"
+            },
+            {
+                "id": "6",
+                "submodule_name": "sgbm",
+                "enable": "0"
+            },
+            {
+                "id": "7",
+                "submodule_name": "reserved",
+                "enable": "0"
+            }
+        ]
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "DEF_ICC_CHNL_PARAM": {
+        "param_icc_chnl_ap_to_dsp": [
+            {
+                "icc_chnl_os_and_process": [
+                    {
+                        "icc_chnl_dsp": [
+                            {
+                                "id": "0",
+                                "core_id": "0",
+                                "enable": "1",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp0-ap0-1.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp0-1.0"
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "core_id": "1",
+                                "enable": "1",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp1-ap0-2.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp1-2.0"
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "core_id": "2",
+                                "enable": "0",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp2-ap0-0.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp2-0.0"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "core_id": "3",
+                                "enable": "1",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp3-ap0-2.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp3-2.0"
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "core_id": "4",
+                                "enable": "0",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp4-ap0-2.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp4-2.0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icc_chnl_dsp": [
+                            {
+                                "id": "0",
+                                "core_id": "0",
+                                "enable": "1",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp0-ap0-0.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp0-0.0"
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "core_id": "1",
+                                "enable": "1",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp1-ap0-0.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp1-0.0"
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "core_id": "2",
+                                "enable": "0",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp2-ap0-0.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp2-0.0"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "core_id": "3",
+                                "enable": "0",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp3-ap0-0.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp3-0.0"
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "core_id": "4",
+                                "enable": "0",
+                                "icc_peer": {
+                                    "rx_chnl": "/dev/icc_dev:dsp4-ap0-2.0",
+                                    "tx_chnl": "/dev/icc_dev:ap0-dsp4-2.0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "param_icc_chnl_linux_to_rtos": [
+            {
+                "id": "0",
+                "core_id": "0",
+                "enable": "0",
+                "icc_peer": {
+                    "rx_chnl": "/dev/icc_dev:ap3-ap0-0.0",
+                    "tx_chnl": "/dev/icc_dev:ap0-ap3-0.0"
+                }
+            }
+        ]
+    }
+}

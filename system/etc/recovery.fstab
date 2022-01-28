@@ -1,0 +1,9 @@
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/by-name/cache      /cache      ext4      noatime,nosuid,nodev,discard,barrier=1,data=ordered        wait,check
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/by-name/recovery   /recovery   emmc      defaults        defaults
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/mirror/system_2     /system     ext4      ro,barrier=1    wait
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/by-name/userdata   /data       ext4      noatime,nosuid,nodev,discard,barrier=1,data=ordered,noauto_da_alloc        wait,check
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/mirror/vendor_2     /vendor     ext4      defaults        defaults
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/mirror/normal_2     /normal     emmc      defaults        defaults
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/mirror/rtos_2       /rtos     emmc      defaults        defaults
+/dev/block/platform/soc/f0000000.ahb/f0400000.dwmmc0/by-name/factory    /factory    emmc      defaults        defaults
+/dev/block/mmcblk0boot0                                                 /bootarea   emmc      defaults        defaults

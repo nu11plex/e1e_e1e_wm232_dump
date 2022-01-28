@@ -1,0 +1,63 @@
+{
+    "tof" :
+    {
+        "top_ic_type" : "TOP_M0_MCU",
+        "dwn_ic_type" : "DOWN_M0_MCU"
+    },
+    "sensor" :
+    {
+        "board_type" : "VP_BOARD_TYPE_WM232",
+        "sensor_num" : 8,
+        "sensor_type" :
+        [
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_SC031GS",
+            "VP_SENSOR_TYPE_NULL",
+            "VP_SENSOR_TYPE_NULL",
+            "VP_SENSOR_TYPE_SC132GS",
+            "VP_SENSOR_TYPE_SC132GS"
+        ],
+        "pos_to_isp_chn_map" :
+        [
+            4, 5, 3, 2, -1, -1, 7, 6, -1, -1, 1, 0
+        ]
+    },
+    "cali" :
+    {
+        "calicheck_max_err" : 3.0,
+        "calicheck_fail_threshold" :
+        [
+            1.0, 1.0, 1.0, 1.0
+        ],
+        "update_cali_threshold_calicheck" :
+        [
+            0.4, 0.4, 0.4, 0.4
+        ],
+        "update_cali_threshold_deg" :
+        [
+            0.025, 0.025, 0.025, 0.025
+        ],
+        "point_collection_roi_x1" :
+        [
+            0, 0, 0, 0
+        ],
+        "point_collection_roi_x2" :
+        [
+            640, 640, 640, 640
+        ],
+        "point_collection_roi_y1" :
+        [
+            0, 0, 0, 0
+        ],
+        "point_collection_roi_y2" :
+        [
+            480, 480, 480, 480
+        ]
+    }
+}

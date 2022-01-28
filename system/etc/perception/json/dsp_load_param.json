@@ -1,0 +1,38 @@
+{
+    "DEF_DSP_LOAD_PARAM": {
+        "static_load_core_number": "3",
+        "dynamic_load_core_number": "0",
+        "core_config": [
+            {
+                "id": "0",
+                "core_id": "0",
+                "img_firmware_path": "/vendor/firmware/perception/ss_dsp0.fw",
+                "nonimg_firmware_path": "/vendor/firmware/perception/ss_dsp0.a"
+            },
+            {
+                "id": "1",
+                "core_id": "1",
+                "img_firmware_path": "/vendor/firmware/perception/ss_dsp1.fw",
+                "nonimg_firmware_path": "/vendor/firmware/perception/ss_dsp1.a"
+            },
+            {
+                "id": "2",
+                "core_id": "2",
+                "img_firmware_path": "/vendor/firmware/perception/ss_dsp2.fw",
+                "nonimg_firmware_path": "/vendor/firmware/perception/ss_dsp2.a"
+            },
+            {
+                "id": "3",
+                "core_id": "3",
+                "img_firmware_path": "/vendor/firmware/perception/ss_dsp3.fw",
+                "nonimg_firmware_path": "/vendor/firmware/perception/ss_dsp3.a"
+            },
+            {
+                "id": "4",
+                "core_id": "4",
+                "img_firmware_path": "/vendor/firmware/perception/ss_dsp4.fw",
+                "nonimg_firmware_path": "/vendor/firmware/perception/ss_dsp4.a"
+            }
+        ]
+    }
+}

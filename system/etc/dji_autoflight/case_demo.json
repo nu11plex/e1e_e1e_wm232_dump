@@ -1,0 +1,930 @@
+{
+  "created_by": "brain.gao",
+  "created_time": "2020-11-03 11:30:43",
+  "updated_time": "2020-11-03 11:30:43",
+  "debug_mode": false,
+  "task_scene": "factory",
+  "ctrl_log_freq": 50,
+  "out_of_control_battery": 0,
+  "task_end_battery": 1,
+  "smart_landing_en": 1,
+  "ctrl_frame": 1,
+  "fly_orientation": 2,
+  "pos_accuracy": {
+    "xyz_acc": 0.05,
+    "yaw_acc": 2
+  },
+  "exit_action": "fc_direct_land",
+  "monitor_cfg": {
+    "battery": "off",
+    "reboot": "off",
+    "sdcard": "off",
+    "gps": "off",
+    "atti_mode": "off",
+    "esc": "off",
+    "mapping_cpu": "off",
+    "hover_offset": "off",
+    "blades": "off",
+    "pigeon": "off",
+    "gnss": "off",
+    "hms": "off"
+  },
+  "radius_limit": 80,
+  "height_limit": 80,
+  "go_home_height": 30,
+  "copy_log": false,
+  "Lists": [
+    {
+      "name": "阶段组1",
+      "loop": 1,
+      "stages": [
+        {
+          "name": "阶段1",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "TAKEOFF",
+              "display_name": "起飞",
+              "class": "fly",
+              "config": {
+                "mode": 0
+              },
+              "name": "Takeoff",
+              "timeout": 10,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  1.2,
+                  0,
+                  0
+                ],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yaw_rate": 90,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 0,
+                "marker_id": -1
+              },
+              "name": "Entry0",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  0.8,
+                  0.7,
+                  1.8
+                ],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yaw_rate": 90,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0.01,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0.01,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 2,
+                "marker_id": -1
+              },
+              "name": "Entry1",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "HOVER",
+              "display_name": "悬停",
+              "class": "fly",
+              "config": {
+                "mode": 0
+              },
+              "name": "Hover1",
+              "timeout": 17,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_ip_cali",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "duration": 17
+              },
+              "name": "Hover1_ip_cali",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_baro",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 4.0,
+                "duration": 6.0,
+                "name": "factory_baro_1",
+                "threshold": 1.0
+              },
+              "name": "factory_baro_1",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_body_vibration",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 17
+              },
+              "name": "Hover1_body_vibration",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_gimbal_turn",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 4
+              },
+              "name": "Hover1_gimbal_turn",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_vib",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0.5,
+                "duration": 4
+              },
+              "name": "Hover1_vib",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_esc",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0.0,
+                "duration": 17
+              },
+              "name": "Hover1_esc",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  2.8,
+                  0.7,
+                  1.8
+                ],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yaw_rate": 90,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 2,
+                "marker_id": -1
+              },
+              "name": "Route1",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20,
+				"threshold": 0.1
+              },
+              "name": "Route1_vio",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_tof_1d",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 1,
+                "duration": 20,
+				"threshold": 0.1
+              },
+              "name": "Route1_tof_1d",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "TURNYAW",
+              "display_name": "原地转YAW",
+              "class": "fly",
+              "config": {
+                "yaw": 1080,
+                "yaw_rate": 90,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 0,
+                "marker_id": -1
+              },
+              "name": "Turnyaw1",
+              "timeout": 20,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_baro",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20,
+				"threshold": 1.0
+              },
+              "name": "factory_baro_2",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_turnyaw_drift",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 1,
+                "duration": 20
+              },
+              "name": "Turnyaw1_turnyaw_drift",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_compass",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20
+              },
+              "name": "Turnyaw1_compass",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20
+              },
+              "name": "Turnyaw1_vio",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  4.3,
+                  0.7,
+                  1.55
+                ],
+                "velocity": 0.9,
+                "yaw": -90,
+                "yaw_rate": 40,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 2,
+                "marker_id": -1
+              },
+              "name": "Entry2",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20
+              },
+              "name": "Entry2_vio",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "HOVER",
+              "display_name": "悬停",
+              "class": "fly",
+              "config": {
+                "mode": 0
+              },
+              "name": "Cali1",
+              "timeout": 5,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+            {
+              "type": "case_fac_gimbal_cali",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+				"start_time": 1,
+                "duration": 4.9
+              },
+              "name": "factory_gimbal_cali_1",
+              "timeout": 30
+            },
+			{
+              "type": "case_fac_hover_drift",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 1,
+                "duration": 4,
+				"hori_thre": 0.2,
+				"vert_thre": 0.1
+              },
+              "name": "Cali1_hover_drift",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 5
+              },
+              "name": "Cali1_vio",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  4.1,
+                  0.7,
+                  1.0
+                ],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yaw_rate": 90,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 2,
+                "marker_id": -1
+              },
+              "name": "Down1",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                -0.2,
+                0,
+                0.55
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 20
+              },
+              "name": "Down1_vio",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "HOVER",
+              "display_name": "悬停",
+              "class": "fly",
+              "config": {
+                "mode": 0
+              },
+              "name": "Gimbal1",
+              "timeout": 32,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            },
+			{
+              "type": "case_fac_vio",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 0,
+                "duration": 32
+              },
+              "name": "Gimbal1_vio",
+              "timeout": 60
+            },
+            {
+              "type": "case_fac_gimbal_vibration",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+				"inner_thre": 70,
+				"mid_thre": 70,
+				"outer_thre": 70,
+                "duration": 32
+              },
+              "name": "Gimbal1_gimbal_vibration",
+              "timeout": 60
+            },
+			{
+              "type": "case_fac_gimbal_cali",
+              "display_name": "云台",
+              "class": "test",
+              "sub_class": [
+                "云台"
+              ],
+              "config": {
+                "direction": "",
+                "deg": "",
+                "start_time": 1,
+                "duration": 5
+              },
+              "name": "factory_gimbal_cali_2",
+              "timeout": 60
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "FLYROUTE_TARGET",
+              "display_name": "航线：距离模式",
+              "class": "fly",
+              "config": {
+                "mode": 0,
+                "target": [
+                  6.1,
+                  0.7,
+                  1.7
+                ],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yaw_rate": 90,
+                "use_gps_flag": 0,
+                "ctrl_freq": 3,
+                "checkover": 3,
+                "pid_x": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_z": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "pid_yaw": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0.3
+                ],
+                "marker_flag": 2,
+                "marker_id": -1
+              },
+              "name": "Exit",
+              "timeout": 15,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            }
+          ]
+        },
+        {
+          "name": "阶段",
+          "loop": 1,
+          "tasks": [
+            {
+              "type": "LAND",
+              "display_name": "降落",
+              "class": "fly",
+              "config": {
+                "mode": 0
+              },
+              "name": "Land",
+              "timeout": 30,
+              "set_homepoint": false,
+              "delta_home": [
+                0,
+                0,
+                0
+              ],
+              "add_waypoint": false,
+              "pre_delay": 0,
+              "post_delay": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "mb_client_info_list" : [
+        {
+            "domain_name" : "perception_service",
+            "role_name" : "perception"
+        },
+        {
+            "domain_name" : "perception_service",
+            "role_name" : "perception_agent"
+        }
+    ],
+    "router_attr_list" :
+    {
+        "self_dev_type" : 18,
+        "self_dev_num" : 0,
+        "route_table" : [
+            {"device_type" :  1 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  1 , "device_num" :  1 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  1 , "device_num" : 65 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  2 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  2 , "device_num" :  6 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  3 , "device_num" :  0 , "if_name" : "icc", "proto_name" : "v1"},
+            {"device_type" :  3 , "device_num" :  6 , "if_name" : "icc", "proto_name" : "v1"},
+            {"device_type" :  4 , "device_num" :  0 , "if_name" : "icc", "proto_name" : "v1"},
+            {"device_type" :  8 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  8 , "device_num" :  2 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  8 , "device_num" :  7 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  8 , "device_num" :  8 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  9 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  10 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  10 , "device_num" :  1 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  14 , "device_num" :  0 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  17 , "device_num" :  2 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  17 , "device_num" :  6 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  17 , "device_num" :  7 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  18 , "device_num" :  0 , "if_name" : "loopback", "proto_name" : "v1"},
+            {"device_type" :  18 , "device_num" :  4 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  18 , "device_num" :  7 , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  28 , "device_num" :  0  , "if_name" : "icc_tunnel", "proto_name" : "v1"},
+            {"device_type" :  29 , "device_num" :  0 ,"if_name" : "icc_tunnel" , "proto_name" : "v1" }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "DEF_CNN_STEREO_REFINE_PARAM": {
+        "enable": "0"
+    }
+}

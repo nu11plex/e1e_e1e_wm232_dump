@@ -1,0 +1,292 @@
+{
+    "IndoorFlyAction":
+    {
+        "Takeoff":{
+            "type": "TAKEOFF",
+            "config": {
+                "timeout": 10
+            }
+        },
+        "Corridor0": {
+            "type": "FLYROUTE",
+            "config": {
+                "use_marker": false,
+                "target_point": [0.8,0.0,0.0],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 30,
+                "timeout": 20
+            }
+        },
+        "Corridor": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [0.80,0.6,-1.8],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 20
+            }
+        },
+        "Entry0": {
+            "type": "FLYROUTE",
+            "config": {
+                "use_marker": false,
+                "target_point": [0.0,1.2,0.0],
+                "velocity": 0.9,
+                "yaw": 90,
+                "yawrate": 30,
+                "timeout": 20
+            }
+        },
+        "Entry1": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [0.8,0.7,-1.8],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 20
+            }
+        },
+        "Hover1": {
+            "type": "HOVER",
+            "config": {
+                "timeout": 17
+            }
+        },
+        "Route1": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [2.8,0.7,-1.8],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 20
+            }
+        },
+        "Turnyaw1": {
+            "type": "TURNYAW",
+            "config": {
+                "use_marker": false,
+                "yaw": 1080,
+                "yawrate": 90,
+                "timeout": 20
+            }
+        },
+        "Light1": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [2.8,0.7,-2.2],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 60
+            }
+        },
+        "Entry2": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [4.0,0.7,-1.55],
+                "velocity": 0.9,
+                "yaw": -90,
+                "yawrate": 40,
+                "timeout": 20
+            }
+        },
+        "Cali1": {
+            "type": "HOVER",
+            "config": {
+                "timeout": 5
+            }
+        },
+        "Down1": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [4.1,0.7,-1.0],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 40,
+                "timeout": 20
+            }
+        },
+        "Gimbal1": {
+            "type": "HOVER",
+            "config": {
+                "timeout": 32
+            }
+        },
+        "Light2": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [4.75,0.7,-2.2],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 50
+            }
+        },
+        "Exit": {
+            "type": "FLYROUTE",
+            "config": {
+                "use_marker": true,
+                "target_point": [5.8,0.7,-1.7],
+                "velocity": 0.9,
+                "yaw": 0,
+                "yawrate": 60,
+                "timeout": 20
+            }
+        },
+        "Out": {
+            "type": "FLYMARKER",
+            "config": {
+                "use_marker": true,
+                "target_point": [0.1,0.6,-1.5],
+                "velocity": 0.9,
+                "yaw": 90,
+                "yawrate": 60,
+                "timeout": 20
+            }
+        },
+        "Land": {
+            "type": "LANDING",
+            "config": {
+                "timeout": 5
+            }
+        }
+    },
+    "IndoorTestAction": {
+        "ip_cali": {
+            "flyactions": [
+            {"name": "Hover1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "roll",  "threshold": 2.5,  "name": "IP_CALI_BAD"},
+            {"case": "pitch", "threshold": 2.5,  "name": "IP_CALI_BAD"},
+            {"case": "time",  "threshold": 15, "name": "IP_CALI_FAIL"}
+            ]
+        },
+        "hover_drift": {
+            "flyactions": [
+            {"name": "Cali1", "start": 1000, "duration": 4000}
+            ],
+            "exceptions": [
+            {"case": "hori", "threshold": 0.2, "name": "HOVER_DRIFT_HORI"},
+            {"case": "vert", "threshold": 0.1, "name": "HOVER_DRIFT_VERT"}
+            ]
+        },
+        "baro": {
+            "flyactions": [
+            {"name": "Hover1", "start": 4000, "duration": 6000},
+            {"name": "Turnyaw1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "diff", "threshold": 1.0, "name": "BARO_BAD"}
+            ]
+        },
+        "turnyaw_drift": {
+            "flyactions": [
+            {"name": "Turnyaw1", "start": 1000, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "hori", "threshold": 0.2,  "name": "TURNYAW_DRIFT_HORI"},
+            {"case": "vert", "threshold": 0.15, "name": "TURNYAW_DRIFT_VERT"}
+            ]
+        },
+        "compass": {
+            "flyactions": [
+            {"name": "Turnyaw1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "scale", "threshold": 0.1, "name": "COMPASS_BAD"},
+            {"case": "bias",  "threshold": 300, "name": "COMPASS_BAD"},
+            {"case": "mold",  "threshold": 700, "name": "COMPASS_BAD"}
+            ]
+        },
+        "vio": {
+            "flyactions": [
+            {"name": "Route1", "start": 0, "duration": -1},
+            {"name": "Turnyaw1", "start": 0, "duration": -1},
+            {"name": "Light1", "start": 0, "duration": -1},
+            {"name": "Entry2", "start": 0, "duration": -1},
+            {"name": "Cali1", "start": 0, "duration": -1},
+            {"name": "Down1", "start": 0, "duration": -1},
+            {"name": "Gimbal1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "hori", "threshold": 0.3, "name": "VIO_BAD"}
+            ]
+        },
+        "body_vibration": {
+            "flyactions": [
+            {"name": "Hover1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "gyro_x", "threshold": 500, "name": "GYRO_FATAL"},
+            {"case": "gyro_y", "threshold": 500, "name": "GYRO_FATAL"},
+            {"case": "gyro_z", "threshold": 500, "name": "GYRO_FATAL"}
+            ]
+        },
+        "gimbal_turn": {
+            "flyactions": [
+            {"name": "Hover1", "start": 0, "duration": 4000}
+            ],
+            "exceptions": [
+            {"case": "diff", "threshold": 10, "name": "GIM_TURN_BAD"}
+            ]
+        },
+        "gimbal_vibration": {
+            "flyactions": [
+            {"name": "Gimbal1", "start": 0, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "flag", "threshold": 70, "name": "GIM_INNER_BAD"},
+            {"case": "flag", "threshold": 70, "name": "GIM_MID_BAD"},
+            {"case": "flag", "threshold": 70, "name": "GIM_OUTER_BAD"}
+            ]
+        },
+        "gimbal_cali": {
+            "flyactions": [
+            {"name": "Cali1", "start": 1000, "duration": 4900},
+            {"name": "Gimbal1", "start": 1000, "duration": 5000}
+            ],
+            "exceptions": [
+            {"case": "roll",  "threshold": 1.5, "name": "GIM_BEVEL_BAD"},
+            {"case": "pitch", "threshold": 3.0, "name": "GIM_BEVEL_BAD"},
+            {"case": "roll",  "threshold": 2.0, "name": "GIM_BEVEL_FATAL"},
+            {"case": "pitch", "threshold": 3.5, "name": "GIM_BEVEL_FATAL"},
+            {"case": "flag",  "threshold": 0,   "name": "GIM_BEVEL_FAIL"},
+            {"case": "flag",  "threshold": -1,  "name": "NO_MAIN_CAMERA_PARAMS"},
+            {"case": "flag",  "threshold": -2,  "name": "GIM_CALI_INIT_FAIL"}
+            ]
+        },
+        "tof_1d": {
+            "flyactions": [
+            {"name": "Route1", "start": 1000, "duration": -1}
+            ],
+            "exceptions": [
+            {"case": "percent", "threshold": 0.1, "name": "TOF_1D_BAD"}
+            ]
+        },
+        "vib": {
+            "flyactions": [
+            {"name": "Hover1", "start": 500, "duration": 4000}
+            ],
+            "exceptions": [
+            {"case": "flag", "threshold": 2.0, "name": "ACC_VIB_X_FATAL"},
+            {"case": "flag", "threshold": 2.0, "name": "ACC_VIB_Y_FATAL"},
+            {"case": "flag", "threshold": 2.0, "name": "ACC_VIB_Z_FATAL"},
+            {"case": "flag", "threshold": 140, "name": "GYRO_VIB_X_FATAL"},
+            {"case": "flag", "threshold": 140, "name": "GYRO_VIB_Y_FATAL"},
+            {"case": "flag", "threshold": 140, "name": "GYRO_VIB_Z_FATAL"}
+            ]
+        }
+    }
+}

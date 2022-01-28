@@ -1,0 +1,25 @@
+{
+    "ref_disparity" : [
+        0,  178, 178
+    ],
+    "ref_disparity_from_file" : [
+        180, 34, 180
+    ],
+    "cacheable_heap_size" : [
+        20971520
+    ],
+    "noncache_heap_size" : [
+        10485760
+    ],
+    "software_insert_image_channel" : [
+        "DOWN_IMAGE",
+        "DOWN_IMAGE",
+        "FRONT_LEFT_IMAGE",
+        "FRONT_RIGHT_IMAGE",
+        "BACK_LEFT_IMAGE",
+        "BACK_RIGHT_IMAGE",
+        "FRONT_LEFT_IMAGE",
+        "FRONT_RIGHT_IMAGE"
+    ],
+    "number_of_soft_insert_chnl" : 8
+}
